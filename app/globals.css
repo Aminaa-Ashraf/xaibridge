@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --wb-white: #fff;
+  --wb-soft: #f7f7f7;
+  --wb-black: #0a0a0a;
+  --wb-ink: #141414;
+  --wb-green: #2ec27e;
+  --wb-green-soft: rgba(46, 194, 126, 0.12);
+  --wb-green-glow: rgba(46, 194, 126, 0.18);
+  --wb-muted: #5c5c5c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-inter), Inter, system-ui, sans-serif;
+  color: #fff;
+  background-color: var(--wb-black);
+}
+
+.home-band-soft {
+  background-color: var(--wb-ink);
+  background-image: radial-gradient(
+    ellipse 70% 50% at 100% 0,
+    rgba(46, 194, 126, 0.1),
+    transparent 65%
+  );
+}
+
+.home-band-dark {
+  background-color: var(--wb-black);
+  background-image: radial-gradient(
+    ellipse 60% 45% at 50% 0,
+    var(--wb-green-glow),
+    transparent 60%
+  );
+}
+
+.brand-marquee {
+  overflow: hidden;
+}
+
+.brand-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: brand-marquee 32s linear infinite;
+}
+
+@keyframes brand-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.card-surface {
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #141414;
+}
+
+.header-logo {
+  transition: padding 0.2s ease;
+}

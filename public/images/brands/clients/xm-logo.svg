@@ -1,0 +1,6 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="160" height="48" viewBox="0 0 160 48" fill="none">
+  <rect width="160" height="48" rx="8" fill="#0A0A0A"/>
+  <text x="28" y="33" font-family="Arial Black, Arial, sans-serif" font-size="28" font-weight="900" fill="#FF6A00" letter-spacing="1">XM</text>
+  <circle cx="118" cy="24" r="10" fill="#FF6A00"/>
+  <path d="M114 24h8M118 20v8" stroke="#0A0A0A" stroke-width="2.2" stroke-linecap="round"/>
+</svg>
